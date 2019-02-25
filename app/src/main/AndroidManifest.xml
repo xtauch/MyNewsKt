@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+          package="tauch.xavier.mynewskt">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity
+                android:name=".Controllers.Activities.MainActivity"
+                android:screenOrientation="portrait"
+                tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".Controllers.Activities.WebActivity"
+                android:screenOrientation="portrait"
+                tools:ignore="InnerclassSeparator">
+        </activity>
+        <activity
+                android:name=".Controllers.Activities.SearchActivity"
+                android:parentActivityName=".Controllers.Activities.MainActivity"
+                android:screenOrientation="portrait"
+                tools:ignore="InnerclassSeparator">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".Controllers.Activities.MainActivity"/>
+        </activity>
+        <activity
+                android:name=".Controllers.Activities.ResultActivity"
+                android:parentActivityName=".Controllers.Activities.MainActivity"
+                android:screenOrientation="portrait"
+                tools:ignore="InnerclassSeparator">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".Controllers.Activities.MainActivity"/>
+        </activity>
+        <activity
+                android:name=".Controllers.Activities.NotifActivity"
+                android:parentActivityName=".Controllers.Activities.MainActivity"
+                android:screenOrientation="portrait"
+                tools:ignore="InnerclassSeparator">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".Controllers.Activities.MainActivity"/>
+        </activity>
+        <receiver android:name=".Utils.NotificationReceiver"
+                  tools:ignore="InnerclassSeparator" />
+    </application>
+
+</manifest>

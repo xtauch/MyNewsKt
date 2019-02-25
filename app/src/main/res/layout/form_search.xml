@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/form_search_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/form_search_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search query term"/>
+
+    <LinearLayout
+        android:id="@+id/form_search_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/form_search_fromdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/from_date"/>
+
+        <EditText
+            android:id="@+id/form_search_todate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/to_date"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/form_search_checkBoxes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical">
+
+
+        <LinearLayout
+            android:id="@+id/form_search_checkBoxes_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/form_search_left_checkBox_arts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Arts"/>
+
+            <CheckBox
+                android:id="@+id/form_search_left_checkBox_business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Business"/>
+
+            <CheckBox
+                android:id="@+id/form_search_left_checkBox_entrepreneurs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Entrepreneurs"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/form_search_checkBoxes_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/form_search_right_checkBox_politics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Politics"/>
+
+            <CheckBox
+                android:id="@+id/form_search_right_checkBox_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sports"/>
+
+            <CheckBox
+                android:id="@+id/form_search_right_checkBox_travel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Travel"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/form_search_warning_checkboxes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="You must check at least one box."/>
+
+    <Button
+        android:id="@+id/form_search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="SEARCH"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/form_search_notif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <Switch
+            android:id="@+id/form_search_switch_notif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Enable notifications (once per day)"/>
+
+    </LinearLayout>
+
+</LinearLayout>

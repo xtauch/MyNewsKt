@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">My News</string>
+    <string name="settings">SETTINGS</string>
+    <string name="search">SEARCH</string>
+    <string name="business">BUSINESS</string>
+    <string name="most_popular">MOST POPULAR</string>
+    <string name="top_stories">TOP STORIES</string>
+
+    <string name="from_date">"From date"</string>
+    <string name="to_date">"To date"</string>
+
+    <string name="ok">"OK"</string>
+
+    <string name="profile_page">Profile page</string>
+    <string name="settings_page">Settings page</string>
+    <string name="news_page">News page</string>
+
+    <!-- Sections -->
+    <string name="automobiles">"Automobiles"</string>
+    <string name="movies">"Movies"</string>
+    <string name="science">"Science"</string>
+    <string name="world">"World"</string>
+    <string name="technology">"Technology"</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+
+</resources>
